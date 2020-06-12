@@ -300,6 +300,7 @@ import moment from 'moment'
       },
       handleCurrentChange(val) {
          this.currentPage=val;
+         this.onSubmit()
          this.orderList()
       },
       orderList(){

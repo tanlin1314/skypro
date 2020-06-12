@@ -154,7 +154,10 @@ export default {
         /index/home  ['首页']
         /index/order  ['新增商品','新增商品']
         */
-      window.__this=this.mbxei(val.path)
+      // window.__this=this.mbxei(val.path)
+      // 默认选中
+      
+       window.__this.default_active=val.path;
 
       },
       // 深度观察监听

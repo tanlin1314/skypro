@@ -109,3 +109,16 @@ export const orderDetail = (id) => axios.get('/order/detail', { params: { id } }
 
 //修改订单 order/edit
 export const orderEdit = (id, orderNo, orderTime, phone, consignee, deliverAddress, deliveryTime, remarks, orderAmount, orderState) => axios.post('order/edit', { id, orderNo, orderTime, phone, consignee, deliverAddress, deliveryTime, remarks, orderAmount, orderState })
+
+
+// 获取店铺管理  /shop/info
+
+export const shopInfo = () => axios.get('/shop/info', { params: {} })
+
+
+//  店铺内容修改/shop/edit
+export const shopEdit = (id, name, bulletin, avatar, deliveryPrice, deliveryTime, description, score, sellCount, supports, date, pics) => axios.post('/shop/edit', { id, name, bulletin, avatar, deliveryPrice, deliveryTime, description, score, sellCount, supports, date, pics })
+
+
+//订单报表 /order/ordertotal
+export const orderOrdertotal = (date) => axios.get('/order/ordertotal', { params: { date } })
